@@ -1,6 +1,6 @@
 # fetch_adblocker
 
-Fetch Steven Black's host file for a dnsmasq based adblocker (Pi Hole or Unifi EdgeRouter)
+Fetch Steven Black's host file for a dnsmasq based adblocker (Pi Hole or Unifi UDM)
 
 1. entries with special characters are filtered because they are not supported by the older versions of dnsmasq
 2. supports whitelist

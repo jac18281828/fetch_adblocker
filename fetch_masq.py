@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import urllib.request,sys
 
 # Choose a Steven Black Hosts file
@@ -18,8 +17,10 @@ pixelserv_ip='0.0.0.0'
 
 
 # local blacklist
-
 blacklist = [
+    '0.0.0.0 dns.google',
+    '0.0.0.0 verizonmedia.com',
+    '0.0.0.0 dtm.adobe.com',    
     '0.0.0.0 ad.lgappstv.com',
     '0.0.0.0 lgappstv.com',
     '0.0.0.0 yumenetworks.com',
@@ -81,25 +82,31 @@ blacklist = [
     '0.0.0.0 servenobid.com',
     '0.0.0.0 datadoghq.com',
     '0.0.0.0 v3qdrfxuyzwb.com',
-    '0.0.0.0 forgeofempires.com',
+    '0.0.0.0 forgeofempires.com'
 ]
 
 # hosts which should be allowed inspite of being blacklisted
 # to fix bugs in the blacklist or issues with specific providers
 whitelist = [
     'nationalgeographic.com',
+#    'tiqcdn.com',
+#    'pinterest.com',
+#    'pinimg.com',
+#    'linkedin.com',
+#    'snapchat.com',
+#    'cbsi.com',
+    'safebrowsing.g.applimg.com',
+    'safebrowsing.apple'
 ]
 
 def is_excluded(host):
     for allowed in whitelist:
         if host.endswith(allowed.encode('utf-8')):
             return True
-
     # unicode limitation for older versions of dnsmasq
     for ch in host:
         if (ch >= 128):
             return True
-
     return False
 
 def read(host_url=ad_hosts_url):
@@ -126,9 +133,7 @@ def read(host_url=ad_hosts_url):
 
 
 if __name__ == '__main__':
-
     try:
-        
         if len(sys.argv) > 1:
             read(sys.argv[1])
         else:
