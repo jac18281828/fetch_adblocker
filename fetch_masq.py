@@ -18,6 +18,9 @@ pixelserv_ip='0.0.0.0'
 
 # local blacklist
 blacklist = [
+    '0.0.0.0 publicis.com',
+    '0.0.0.0 publicisna.com',
+    '0.0.0.0 publicisgroupe.com',    
     '0.0.0.0 dns.google',
     '0.0.0.0 verizonmedia.com',
     '0.0.0.0 dtm.adobe.com',    
