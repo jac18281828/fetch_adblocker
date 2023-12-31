@@ -1,5 +1,7 @@
 # Unifi Fetch Adblocker
 
+[![Test](https://github.com/jac18281828/fetch_adblocker/actions/workflows/ci-image.yml/badge.svg)](https://github.com/jac18281828/fetch_adblocker/actions/workflows/ci-image.yml)
+
 ## Pi-hole setup for Unifi router
 
 Fetch Steven Black's host file for a dnsmasq based adblocker.  Either Pi Hole or Unifi UDM routers can use this method.
