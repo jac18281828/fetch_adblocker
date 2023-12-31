@@ -24,3 +24,7 @@ Note: fetch_mas2.py works with python2 on legacy router firmware.
 ## RUN
 
 ` ./fetch_masq.py > /etc/dnsmasq.d/dnsmasq.adblock.conf `
+
+## LEGACY
+
+'fetch_masq2.py' - legacy python 2 implementation
