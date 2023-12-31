@@ -5,7 +5,7 @@ import traceback
 import re
 
 # Constants
-AD_HOSTS_URL = 'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts'
+AD_HOSTS_URL = 'https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts'
 PIXELSERV_IP = '0.0.0.0'
 
 # Local blacklist and whitelist
