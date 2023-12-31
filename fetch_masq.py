@@ -58,7 +58,3 @@ if __name__ == '__main__':
         print('Failed: {}'.format(e))
         traceback.print_exc(e)        
         sys.exit(1)
-
-
-
-        
