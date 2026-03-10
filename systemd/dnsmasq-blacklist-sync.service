@@ -1,0 +1,12 @@
+[Unit]
+Description=Sync static dnsmasq blacklist into UniFi runtime config
+After=udapi-server.service
+ConditionPathExists=/etc/dnsmasq.d/blacklist.conf
+
+[Service]
+Type=oneshot
+ExecStart=/root/blacklist/sync_runtime_blacklist.sh
+
+[Install]
+WantedBy=multi-user.target
+WantedBy=udapi-server.service
